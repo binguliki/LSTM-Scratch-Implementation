@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.10)
+project(PlotExample)
+
+set(CMAKE_CXX_STANDARD 17)
+include_directories(
+    /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/tensorflow/include/external/local_config_python/python_include
+    /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/tensorflow/include/external/local_config_python/numpy_include
+    /usr/local/include
+)
+link_directories(
+    /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/config-3.12-darwin
+)
+add_compile_options(-Wno-deprecated-declarations)
+add_executable(plot_graph plot.cpp)
+target_link_libraries(plot_graph
+    python3.12
+)
