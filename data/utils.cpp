@@ -10,7 +10,7 @@
 */
 using namespace std;
 int main(){
-    string path = "./data/NationalNames.csv";
+    string path = "NationalNames.csv";
     ifstream InFile(path);
 
     int NUM_OF_NAMES;
@@ -31,7 +31,7 @@ int main(){
     InFile.close();
 
     cout << "Writing ..." << endl;
-    string destination_path = "./data/names.txt";
+    string destination_path = "names.txt";
     ofstream OutFile(destination_path);
     for(int i=1; i<=NUM_OF_NAMES; i++){
         OutFile << names[i] + "\n";
