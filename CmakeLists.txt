@@ -3,12 +3,12 @@ project(PlotExample)
 
 set(CMAKE_CXX_STANDARD 17)
 include_directories(
-    /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/tensorflow/include/external/local_config_python/python_include
-    /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/tensorflow/include/external/local_config_python/numpy_include
-    /usr/local/include
+    /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/tensorflow/include/external/local_config_python/python_include # Replace with your python include file
+    /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/tensorflow/include/external/local_config_python/numpy_include # Replace with your numpy include file
+    /usr/local/include # Replace with your Lib python path
 )
 link_directories(
-    /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/config-3.12-darwin
+    /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/config-3.12-darwin # Replace with your python version
 )
 add_compile_options(-Wno-deprecated-declarations)
 add_executable(plot_graph plot.cpp)

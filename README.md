@@ -4,10 +4,11 @@ This repository contains a scratch implementation of Long Short-Term Memory (LST
 
 ## Features
 
-- Implementation of LSTM from scratch in C++
-- Custom dataset loading and preprocessing
-- Training and evaluation scripts
-- Visualization of training metrics
+- Implementation of LSTM from scratch in C++ (It includes Embedding layer for input embedding and Output passed through a softmax function).
+- Custom dataset loading and preprocessing.
+- Training and evaluation scripts.
+- Visualization of training metrics.
+
 
 ## File Structure
 
