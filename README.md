@@ -78,6 +78,10 @@ This repository contains a scratch implementation of Long Short-Term Memory (LST
 ## Pretrained Model
 The model has been trained on 12,000 instances and tested on 2,000 instances. The weights of the trained model are provided in the pretrained/ directory.
 
+## Future Contributions
+- Planning to integrate GPU inference and training, using CUDA.
+- Finetune over a good dataset , to address tasks like poem generation.
+  
 ## Images
 1. Utils file Output: <br>
 <img src = "./Images/utils_file.png" style = "border-style: dashed; border-radius:5px"></img>
